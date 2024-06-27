@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: boilerplate-2024
+
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss"
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-null-for-primitives: true
+
+  profiles:
+    active: ${SCOPE:stage}
